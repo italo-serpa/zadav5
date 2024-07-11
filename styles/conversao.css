@@ -1,0 +1,104 @@
+.acao {
+  display: flex;
+  padding: 60px;
+  background-image: linear-gradient(to right, #7f987b, #456c3d);
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: space-around;
+}
+
+.img__container {
+  display: flex;
+  align-items: center;
+}
+
+.acao__img {
+  width: 500px;
+  height: 500px;
+}
+
+.acao__options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.acao__options-option {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: left;
+  padding: 20px;
+  padding-left: 60px;
+}
+
+.acao__options-option img {
+  height: 50px;
+  padding-right: 15px;
+}
+
+.acao__options-option button {
+  background-image: linear-gradient(to left, #7eb314, #55bb41);
+}
+
+.email {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.email input {
+  margin: 20px 0px;
+  width: 400px;
+  font-size: 15px;
+}
+
+.email button {
+  width: 230px;
+  height: 70px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.acao__options-option input {
+  height: 30px;
+  color: black;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .acao {
+    flex-direction: column;
+    padding: 60px 0px;
+    font-size: 1rem;
+    align-items: center;
+  }
+  .acao__img {
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+  }
+  .email input {
+    width: 320px;
+  }
+  .acao__options-option {
+    padding: 30px;
+  }
+  .img__container {
+    width: 100vw;
+  }
+  .email input {
+    font-size: 1rem;
+  }
+  .email button {
+    font-size: 1.3rem;
+  }
+  .email {
+    align-items: center;
+  }
+}

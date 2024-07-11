@@ -1,0 +1,74 @@
+.inicio {
+  display: flex;
+  background-image: url(../assets/noah.jpg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100svh;
+  width: 100vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.inicio__imagem {
+  background-image: url(../assets/zada.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  animation: zada 3s infinite;
+}
+
+.inicio__texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 450px;
+  color: white;
+  padding-top: 100px;
+}
+
+.inicio__texto h1 {
+  font-size: 2.7rem;
+  padding-bottom: 20px;
+  font-weight: bolder;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.inicio__texto p {
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1024px) {
+  .inicio {
+    flex-direction: column-reverse;
+  }
+  .inicio__imagem {
+    width: 375px;
+    height: 375px;
+  }
+  .inicio__texto {
+    width: 330px;
+    padding-bottom: 30px;
+    padding-top: 0px;
+  }
+  .inicio__texto h1 {
+    font-size: 2rem;
+  }
+  .inicio__texto p {
+    font-size: 1rem;
+  }
+}
+
+@keyframes zada {
+  20% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}

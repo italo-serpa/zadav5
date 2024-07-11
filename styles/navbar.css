@@ -1,0 +1,95 @@
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    max-width: 1900px;
+    z-index: 1;
+    padding-top: 30px;
+    color: #ddfec7;
+  }
+  
+  .nav__container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav__button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .nav__bar {
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin-bottom: 5px;
+    background-color: #ddfec7;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav__button.ativo .nav__bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .nav__button.ativo .nav__bar:nth-child(2) {
+    opacity: 0;
+  }
+  .nav__button.ativo .nav__bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  
+  .nav__links {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    right: -250px;
+    top: 0px;
+    transition: 0.5s ease-out;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    background-color: hwb(0 0% 100% / 0.7);
+    backdrop-filter: blur(3px);
+    width: 200px;
+    height: 100svh;
+  }
+  
+  .nav__links.ativo {
+    right: 0px;
+  }
+  
+  .nav__link {
+    padding: 15px;
+    transition: 0.2s ease;
+  }
+
+  .tradutor {
+    margin-top: 70px;
+    cursor: pointer;
+  }
+
+  .nav__link:hover {
+    font-size: 1.7rem;
+    color: #9ae568;
+  }
+  
+  .nav__logo {
+    width: 100px;
+    transition: 0.2s ease;
+  }
+  
+  .nav__logo:hover {
+    width: 110px;
+  }

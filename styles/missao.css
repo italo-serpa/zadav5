@@ -1,0 +1,53 @@
+.missao {
+  display: flex;
+  width: 100vw;
+  padding: 60px 0px;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: linear-gradient(to left, #667963, #456c3d);
+  color: white;
+}
+
+.missao h2 {
+  padding: 80px 20px;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  text-align: justify;
+  width: 40vw;
+}
+
+.missao img {
+  width: 300px;
+  border-radius: 100px 0px 100px 0px;
+}
+
+.missao img:nth-child(1) {
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 1024px) {
+  .missao {
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 120px 0px
+  }
+  .missao h2 {
+    width: 80vw;
+    padding: 0px;
+    font-size: 1rem;
+  }
+  .missao img {
+    width: 300px;
+    opacity: 0.3;
+    position: absolute;
+  }
+  .pata1 {
+    top: -45px;
+    left: 0px;
+  }
+  .pata2 {
+    bottom: 0px;
+    right: 0px;
+  }
+}
